@@ -8,7 +8,7 @@ a:hover{
 }
 
 main{
-    
+
 }
 
 nav {
@@ -70,7 +70,7 @@ nav div{
         display: none;
         position: absolute;
         top: 40px;
-        left: 10px;
+        left: 20px;
     }
 
     .burger:hover #menu2{
