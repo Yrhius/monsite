@@ -3,3 +3,7 @@ body{
     width: 80%;
     margin: auto;
 }
+a:hover{
+    color: #01D758;
+}
+
