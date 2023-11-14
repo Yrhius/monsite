@@ -60,6 +60,17 @@ nav div{
     width: 100px;
 }
 
+footer
+{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+    margin:0;
+}
+
+
 @media( max-width:767px){
     .menu{
         display: none;
