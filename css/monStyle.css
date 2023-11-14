@@ -8,21 +8,27 @@ a:hover{
 }
 
 main{
+    margin-top: 70px;
+}
 
+header{
+    display: flex;
+    justify-content: center;
 }
 
 nav {
-    width: 75%;
     height: 50px;
-    margin:0px auto;
+    margin: auto;
     display: flex;
     flex-direction:row;
-    align-items: stretch;
-    justify-content: flex-end;
+    align-items: stretch ;
+    justify-content: center;
+    position: fixed;
+    top: 0;
 }
 
-nav>div{
-    background-color: olivedrab;
+.menu>div{
+    background-color: darkgreen;
     display: flex;
     position: relative;
     border-left : 2px solid black;
@@ -30,19 +36,19 @@ nav>div{
 }
 
 nav a{
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 nav>div:first-child{
-    border-left : 0px;
+    border-left : 0;
 }
 
 .submenu{
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     margin: 50px 0 0 0;
-    background-color: #aca;
+    background-color: seagreen;
     display: none;
 }
 
@@ -55,7 +61,7 @@ nav div{
 }
 
 @media( max-width:767px){
-    nav{
+    .menu{
         display: none;
     }
 
