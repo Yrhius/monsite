@@ -7,3 +7,80 @@ body{
 main{
     
 }
+
+nav {
+    width: 75%;
+    height: 50px;
+    margin:0px auto;
+    display: flex;
+    flex-direction:row;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+nav>div{
+    background-color: olivedrab;
+    display: flex;
+    position: relative;
+    border-left : 2px solid black;
+    align-items: center;
+}
+
+nav a{
+    padding: 0px 10px;
+}
+
+nav>div:first-child{
+    border-left : 0px;
+}
+
+.submenu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 50px 0 0 0;
+    background-color: #aca;
+    display: none;
+}
+
+nav div:hover div.submenu{
+    display:block;
+}
+
+nav div{
+    width: 100px;
+}
+
+@media( max-width:767px){
+    nav{
+        display: none;
+    }
+
+    .burger{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    #menu2 {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+    }
+
+    .burger:hover #menu2{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media(min-width:768px){
+
+    .burger{
+        display: none;
+    }
+
+}
