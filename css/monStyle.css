@@ -76,6 +76,12 @@ nav div{
     /*background-color: cyan;*/
     margin: auto;
 }
+h4{
+    justify-content: center;
+}
+.section img {
+    height: 300px;
+  }
 
 .conteneur ul
 {
