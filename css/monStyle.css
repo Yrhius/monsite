@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body{
     background-color: #293133;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
 }
 a:hover{
     color: #01D758;
@@ -9,6 +13,9 @@ a:hover{
 
 main{
     margin-top: 70px;
+    width:80%;
+    padding:1em;
+    margin:0 auto;
 }
 
 header{
@@ -25,6 +32,7 @@ nav {
     justify-content: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .menu>div{
@@ -60,15 +68,103 @@ nav div{
     width: 100px;
 }
 
-footer
+/*footer*/
+
+.conteneur
 {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: #45a1ff;
-    color: #fff;
-    margin:0;
+    max-width:1170px;
+    /*background-color: cyan;*/
+    margin: auto;
 }
+h4{
+    justify-content: center;
+}
+.section img {
+    height: 300px;
+  }
+
+.conteneur ul
+{
+    list-style: none;
+}
+
+.ligne
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.footer
+{
+    /*background-color:red;*/
+    padding: 10px 0;
+    background-color: black;
+}
+
+.colonne
+{
+    width: 30%;
+    padding:0 15px;
+}
+
+.colonne h4
+{
+    position:relative;
+    font-size:18px;
+    color:#01D758;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    /*background-color: yellow;*/
+    /* border-bottom:2px solid green;
+    padding-bottom:5px; */
+}
+
+.colonne h4::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50%; 
+    height: 2px; 
+    background-color: #01D758;
+} 
+
+.colonne ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.colonne ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#FFF;
+    text-decoration: none;
+    font-weight:300;
+    color:#555;
+    display:block;
+    transition: all 0.3s ease;
+}
+
+.colonne ul li a:hover
+{
+    color:#01D758;
+    padding-left: 8px;
+}
+
+.colonne .images
+{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+
+} 
+
+/* fin footer*/
 
 
 @media( max-width:767px){
@@ -95,6 +191,12 @@ footer
         flex-direction: column;
 
     }
+
+    .colonne
+    {
+        width:50%;
+        margin-bottom:30px;
+    }
 }
 
 @media(min-width:768px){
@@ -103,4 +205,12 @@ footer
         display: none;
     }
 
+}
+
+@media (max-width: 574px) 
+{
+    .colonne
+    {
+        width:100%
+    }    
 }
