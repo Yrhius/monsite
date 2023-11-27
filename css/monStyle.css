@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 body{
     background-color: #293133;
     width: 100%;
@@ -11,12 +12,28 @@ a:hover{
     color: #01D758;
 }
 
+a{
+    color:lightgrey;
+}
+
+/*main*/
 main{
-    margin-top: 70px;
     width:80%;
     padding:1em;
-    margin:0 auto;
+    margin: 70px auto 0;
 }
+
+h1{
+    color: seagreen;
+}
+
+h2{
+    color: #01D758;
+}
+
+/*fin main*/
+
+/*header*/
 
 header{
     display: flex;
@@ -36,10 +53,10 @@ nav {
 }
 
 .menu>div{
-    background-color: darkgreen;
+    background-color: black;
     display: flex;
     position: relative;
-    border-left : 2px solid black;
+    border-left : 2px solid #01D758;
     align-items: center;
 }
 
@@ -60,6 +77,10 @@ nav>div:first-child{
     display: none;
 }
 
+.menu>div.active{
+    background-color: seagreen;
+}
+
 nav div:hover div.submenu{
     display:block;
 }
@@ -68,14 +89,15 @@ nav div{
     width: 100px;
 }
 
+/*fin header*/
+
 /*footer*/
 
-.conteneur
-{
+.conteneur {
     max-width:1170px;
-    /*background-color: cyan;*/
     margin: auto;
 }
+
 h4{
     justify-content: center;
 }
@@ -83,39 +105,32 @@ h4{
     height: 300px;
   }
 
-.conteneur ul
-{
+.conteneur ul {
     list-style: none;
 }
 
-.ligne
-{
+.ligne {
     display:flex;
     flex-wrap: wrap;
 }
 
-.footer
-{
-    /*background-color:red;*/
+.footer {
     padding: 10px 0;
     background-color: black;
 }
 
-.colonne
-{
+.colonne {
     width: 30%;
     padding:0 15px;
 }
 
-.colonne h4
-{
+.colonne h4 {
     position:relative;
     font-size:18px;
     color:#01D758;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
-    /*background-color: yellow;*/
     /* border-bottom:2px solid green;
     padding-bottom:5px; */
 }
@@ -131,31 +146,26 @@ h4{
     background-color: #01D758;
 } 
 
-.colonne ul li:not(:last-child)
-{
+.colonne ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.colonne ul li a
-{
+.colonne ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color:#FFF;
+    color:lightgrey;
     text-decoration: none;
     font-weight:300;
-    color:#555;
     display:block;
     transition: all 0.3s ease;
 }
 
-.colonne ul li a:hover
-{
+.colonne ul li a:hover {
     color:#01D758;
     padding-left: 8px;
 }
 
-.colonne .images
-{
+.colonne .images {
     display: inline-block;
     height:40px;
     width:40px;
@@ -179,17 +189,21 @@ h4{
         z-index: 1;
     }
 
-    #menu2 {
+    .menu2 {
         display: none;
         position: absolute;
         top: 40px;
         left: 20px;
     }
 
-    .burger:hover #menu2{
+    .burger:hover .menu2{
         display: flex;
         flex-direction: column;
 
+    }
+
+    .secondaire{
+        display: none;
     }
 
     .colonne

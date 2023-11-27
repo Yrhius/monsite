@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <header id="retour_au_début">
+    <header>
 
         <nav>
             <div class="burger">
                 <img src="images/burger.png" alt="burger" width="50">
-                <div id="menu2"><a href="./accueil.html">Accueil</a>
+                <div class="menu2"><a href="./accueil.html">Accueil</a>
                     <div><a href="./page2.html">Page 2</a>
                     </div><!--
          -->
-                    <div><a href="./page3.html">Page 3</a>
+                    <div><a href="./page3.html">Synopsis</a>
                     </div><!--
 	     -->
-                    <div><a href="./page4.html">Page 4</a>
+                    <div><a href="./page4.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -29,11 +29,11 @@
 
 
         <nav class="menu">
-            <div><a href="./accueil.html">Accueil</a>
+            <div class="active"><a href="./accueil.html">Accueil</a>
                 <div class="submenu">
-                    <div><a href="./accueil.html">one</a></div>
-                    <div><a href="./accueil.html">two</a></div>
-                    <div><a href="./accueil.html">three</a></div>
+                    <div><a href="./accueil.html#11">Index</a></div>
+                    <div><a href="./accueil.html#12">Description</a></div>
+                    <div><a href="./accueil.html#13">A propos</a></div>
                 </div>
             </div><!--
      -->
@@ -45,15 +45,15 @@
                 </div>
             </div><!--
      -->
-            <div><a href="./page3.html">Page3</a>
+            <div><a href="./page3.html">Synopsis</a>
                 <div class="submenu">
-                    <div><a href="./page3.html">one</a></div>
-                    <div><a href="./page3.html">two</a></div>
-                    <div><a href="./page3.html">three</a></div>
+                    <div><a href="./page3.html#31">Expert 1</a></div>
+                    <div><a href="./page3.html#32">Expert 2</a></div>
+                    <div><a href="./page3.html#33">Expert 3</a></div>
                 </div>
             </div><!--
      -->
-            <div><a href="./page4.html">Page4</a>
+            <div><a href="./page4.html">Contact</a>
                 <div class="submenu">
                     <div><a href="./page4.html">one</a></div>
                     <div><a href="./page4.html">two</a></div>
@@ -65,8 +65,49 @@
 
 
     <main>
-        <article>
-            <h3>Necessaire a la balise article</h3>
+
+        <h1>Bienvenu sur le site de TeckPoint</h1>
+
+        <article class="secondaire" id="11">
+            <h2>Index</h2>
+
+            <ul>
+                <li><a href="./accueil.html">Accueil</a>
+                    <ol>
+                        <li><p><a href="./accueil.html#11">Index</a></p></li>
+                        <li><P><a href="./accueil.html#12">Description</a></P></li>
+                        <li><P><a href="./accueil.html#13">A propos</a></P></li>
+                    </ol>
+                </li>
+                <li><a href="./page2.html">Page 2</a>
+                    <ol>
+                        <li><p><a href="./page2.html">one</a></p></li>
+                        <li><P><a href="./page2.html">two</a></P></li>
+                        <li><P><a href="./page2.html">three</a></P></li>
+                    </ol>
+                </li>
+                <li><a href="./page3.html">Synopsis</a>
+                    <ol>
+                        <li><p><a href="./page3.html#31">Expert 1</a></p></li>
+                        <li><P><a href="./page3.html#32">Expert 2</a></P></li>
+                        <li><P><a href="./page3.html#33">Expert 3</a></P></li>
+                    </ol>
+                </li>
+                <li><a href="./page4.html">Contact</a>
+                    <ol>
+                        <li><p><a href="./page4.html">one</a></p></li>
+                        <li><P><a href="./page4.html">two</a></P></li>
+                        <li><P><a href="./page4.html">three</a></P></li>
+                    </ol>
+                </li>
+
+            </ul>
+        </article>
+
+        <article id="12">
+
+            <h2>Description controverse</h2>
+
             <p> Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet
                 purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet
                 sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc dapibus tortor vel mi
@@ -137,39 +178,31 @@
                 ipsum. Aliquam erat volutpat. Pellentesque sapien. Cras elementum. Nulla pulvinar eleifend sem. Cum
                 sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque porta. Vivamus
                 porttitor turpis ac leo.
-
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi gravida libero nec velit. Morbi
-                scelerisque luctus velit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Proin mattis
-                lacinia justo. Vestibulum facilisis auctor urna. Aliquam in lorem sit amet leo accumsan lacinia. Integer
-                rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit
-                amet enim. Phasellus et lorem id felis nonummy placerat. Fusce dui leo, imperdiet in, aliquam sit amet,
-                feugiat eu, orci. Aenean vel massa quis mauris vehicula lacinia. Quisque tincidunt scelerisque libero.
-                Maecenas libero. Etiam dictum tincidunt diam. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-                sed, est. Suspendisse nisl. Sed convallis magna eu sem. Cras pede libero, dapibus nec, pretium sit amet,
-                tempor quis, urna.
-
-                Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet
-                purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet
-                sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc dapibus tortor vel mi
-                dapibus sollicitudin. Etiam posuere lacus quis dolor. Praesent id justo in neque elementum ultrices.
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In
-                convallis. Fusce suscipit libero eget elit. Praesent vitae arcu tempor neque lacinia pretium. Morbi
-                imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.
-
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi gravida libero nec velit. Morbi
-                scelerisque luctus velit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Proin mattis
-                lacinia justo. Vestibulum facilisis auctor urna. Aliquam in lorem sit amet leo accumsan lacinia. Integer
-                rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit
-                amet enim. Phasellus et lorem id felis nonummy placerat. Fusce dui leo, imperdiet in, aliquam sit amet,
-                feugiat eu, orci. Aenean vel massa quis mauris vehicula lacinia. Quisque tincidunt scelerisque libero.
-                Maecenas libero. Etiam dictum tincidunt diam. Donec ipsum massa, ullamcorper in, auctor et, scelerisque
-                sed, est. Suspendisse nisl. Sed convallis magna eu sem. Cras pede libero, dapibus nec, pretium sit amet,
-                tempor quis, urna.</p>
+            </p>
         </article>
 
-        <aside>
+        <article class="secondaire" id="13">
+            <h2>A propos de nous</h2>
 
-        </aside>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate,
+                erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor.
+                Mauris pretium quam et urna. Fusce nibh. Duis risus. Curabitur sagittis hendrerit ante. Aliquam erat
+                volutpat. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Duis condimentum augue
+                id magna semper rutrum. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Proin
+                pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Fusce consectetuer risus a nunc.
+                Aliquam ornare wisi eu metus. Integer pellentesque quam vel velit. Duis pulvinar.
+
+                Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in
+                sapien. Fusce tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum
+                ipsum. Aliquam erat volutpat. Pellentesque sapien. Cras elementum. Nulla pulvinar eleifend sem. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque porta. Vivamus
+                porttitor turpis ac leo.
+            </p>
+
+
+        </article>
+
 
 
 
