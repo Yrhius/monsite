@@ -2,11 +2,13 @@
 
 
 body{
-    background-color: #293133;
+    /*background-color: #293133;*/
+    background-color: #444;
     width: 100%;
     margin: auto;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+    color:lightgrey
 }
 a:hover{
     color: #01D758;
@@ -35,17 +37,11 @@ h3{
 
 /*header*/
 
-header{
-    display: flex;
-    justify-content: center;
-}
-
-nav {
+.menu{
+    background-color: black;
+    width: 100%;
     height: 50px;
-    margin: auto;
     display: flex;
-    flex-direction:row;
-    align-items: stretch ;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -53,20 +49,17 @@ nav {
 }
 
 .menu>div{
-    background-color: black;
     display: flex;
     position: relative;
     border-left : 2px solid #01D758;
     align-items: center;
-}
-
-nav a{
     padding: 0 10px;
 }
 
-nav>div:first-child{
-    border-left : 0;
+.menu>div:last-child{
+    border-right: 2px solid #01D758;
 }
+
 
 .submenu{
     position: absolute;
@@ -83,10 +76,6 @@ nav>div:first-child{
 
 nav div:hover div.submenu{
     display:block;
-}
-
-nav div{
-    width: 100px;
 }
 
 /*fin header*/
@@ -153,7 +142,6 @@ h4{
 .colonne ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color:lightgrey;
     text-decoration: none;
     font-weight:300;
     display:block;
@@ -187,6 +175,10 @@ h4{
         top: 0;
         left: 0;
         z-index: 1;
+    }
+
+    .burger img{
+        width: 50px;
     }
 
     .menu2 {
