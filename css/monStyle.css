@@ -27,7 +27,7 @@ h1{
     color: seagreen;
 }
 
-h2{
+h3{
     color: #01D758;
 }
 
@@ -193,12 +193,14 @@ h4{
         display: none;
         position: absolute;
         top: 40px;
-        left: 20px;
+        left: 0;
     }
+
 
     .burger:hover .menu2{
         display: flex;
         flex-direction: column;
+        background-color: seagreen;
 
     }
 
