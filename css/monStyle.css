@@ -3,7 +3,7 @@
 
 body{
     /*background-color: #293133;*/
-    background-color: #444;
+    background-color: #222222;
     width: 100%;
     margin: auto;
     font-family: 'Poppins', sans-serif;
@@ -33,9 +33,22 @@ h3{
     color: #01D758;
 }
 
+/* article {
+    margin-bottom: 10px;     
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+} */
+
+
 /*fin main*/
 
 /* nav */
+
+nav a 
+{
+    text-decoration: none;
+}
 
 .menu{
     background-color: black;
@@ -74,13 +87,16 @@ h3{
     background-color: seagreen;
 }
 
-nav div:hover div.submenu{
+nav > div:hover div.submenu{
     display:block;
 }
 
 /*fin nav*/
 
+
 /*footer*/
+
+
 
 .conteneur {
     max-width:1170px;
@@ -135,8 +151,9 @@ footer {
     background-color: #01D758;
 } 
 
-.colonne ul li:not(:last-child) {
-    margin-bottom: 10px;
+.colonne ul li
+{
+    margin-bottom: 5px;
 }
 
 .colonne ul li a {
