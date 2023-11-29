@@ -1,34 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 body{
-    background-color: #293133;
+    /*background-color: #293133;*/
+    background-color: #222222;
     width: 100%;
     margin: auto;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+    color:lightgrey
 }
 a:hover{
     color: #01D758;
 }
 
+a{
+    color:lightgrey;
+}
+
+/*main*/
 main{
-    margin-top: 70px;
     width:80%;
     padding:1em;
-    margin:0 auto;
+    margin: 70px auto 0;
 }
 
-header{
-    display: flex;
-    justify-content: center;
+h1{
+    color: seagreen;
 }
 
-nav {
-    height: 50px;
-    margin: auto;
+h3{
+    color: #01D758;
+}
+
+/* article {
+    margin-bottom: 10px;     
     display: flex;
-    flex-direction:row;
-    align-items: stretch ;
+    flex-direction: column; 
+    margin-bottom: 20px;
+} */
+
+
+/*fin main*/
+
+/* nav */
+
+nav a 
+{
+    text-decoration: none;
+}
+
+.menu{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -36,20 +62,17 @@ nav {
 }
 
 .menu>div{
-    background-color: darkgreen;
     display: flex;
     position: relative;
-    border-left : 2px solid black;
+    border-left : 2px solid #01D758;
     align-items: center;
-}
-
-nav a{
     padding: 0 10px;
 }
 
-nav>div:first-child{
-    border-left : 0;
+.menu>div:last-child{
+    border-right: 2px solid #01D758;
 }
+
 
 .submenu{
     position: absolute;
@@ -60,9 +83,15 @@ nav>div:first-child{
     display: none;
 }
 
-nav div:hover div.submenu{
+.menu>div.active{
+    background-color: seagreen;
+}
+
+nav > div:hover div.submenu{
     display:block;
 }
+
+/*fin nav*/
 
 nav div{
     width: 100px;
@@ -81,12 +110,13 @@ h2, h3, h4{
 
 /*footer*/
 
-.conteneur
-{
+
+
+.conteneur {
     max-width:1170px;
-    /*background-color: cyan;*/
     margin: auto;
 }
+
 h4{
     justify-content: center;
 }
@@ -94,39 +124,32 @@ h4{
     height: 300px;
   }
 
-.conteneur ul
-{
+.conteneur ul {
     list-style: none;
 }
 
-.ligne
-{
+.ligne {
     display:flex;
     flex-wrap: wrap;
 }
 
-.footer
-{
-    /*background-color:red;*/
+footer {
     padding: 10px 0;
     background-color: black;
 }
 
-.colonne
-{
+.colonne {
     width: 30%;
     padding:0 15px;
 }
 
-.colonne h4
-{
+.colonne h4 {
     position:relative;
     font-size:18px;
     color:#01D758;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
-    /*background-color: yellow;*/
     /* border-bottom:2px solid green;
     padding-bottom:5px; */
 }
@@ -142,31 +165,26 @@ h4{
     background-color: #01D758;
 } 
 
-.colonne ul li:not(:last-child)
+.colonne ul li
 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.colonne ul li a
-{
+.colonne ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color:#FFF;
     text-decoration: none;
     font-weight:300;
-    color:#555;
     display:block;
     transition: all 0.3s ease;
 }
 
-.colonne ul li a:hover
-{
+.colonne ul li a:hover {
     color:#01D758;
     padding-left: 8px;
 }
 
-.colonne .images
-{
+.colonne .images {
     display: inline-block;
     height:40px;
     width:40px;
@@ -190,17 +208,27 @@ h4{
         z-index: 1;
     }
 
-    #menu2 {
+    .burger img{
+        width: 50px;
+    }
+
+    .menu2 {
         display: none;
         position: absolute;
         top: 40px;
-        left: 20px;
+        left: 0;
     }
 
-    .burger:hover #menu2{
+
+    .burger:hover .menu2{
         display: flex;
         flex-direction: column;
+        background-color: seagreen;
 
+    }
+
+    .secondaire{
+        display: none;
     }
 
     .colonne
