@@ -67,6 +67,17 @@ nav div:hover div.submenu{
 nav div{
     width: 100px;
 }
+@font-face{
+    font-family: "SourceSansPro"; src: url(fontes/source-sans-pro.zip)
+}
+
+h2, h3, h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.float
+{
+    float:left; 
+}
 
 /*footer*/
 
