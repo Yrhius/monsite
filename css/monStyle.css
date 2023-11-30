@@ -97,17 +97,25 @@ nav div{
     width: 100px;
 }
 @font-face{
-    font-family: "SourceSansPro"; src: url(fontes/source-sans-pro.zip)
+    font-family: "SourceSansPro"; src: url(fontes/source-sans-pro.zip);
+    font-family: "ChunkFive" ; src: url(fontes/chunkfive.zip);
+    font-family: "openSans"; src: url(fontes/open-sans.zip);
 }
 
-h2, h3, h4{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h2, h3{
+    font-family: 'ChunkFive','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4{
+    font-family: 'openSans','sans-sherif','Arial';
 }
 .float
 {
     float:left; 
 }
 
+p{
+    font-family: 'SourceSansPro', Arial, Helvetica, sans-serif;
+}
 /*footer*/
 
 
