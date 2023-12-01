@@ -33,13 +33,22 @@ h3{
     color: #01D758;
 }
 
-/* article {
-    margin-bottom: 10px;     
+article {
     display: flex;
-    flex-direction: column; 
-    margin-bottom: 20px;
-} */
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+}
 
+.PESTEL
+{
+    
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
 
 /*fin main*/
 
@@ -59,6 +68,7 @@ nav a
     position: fixed;
     top: 0;
     z-index: 1;
+    /*backdrop-filter: blur(3px); a voir pourquoi pas ca peut être sympa*/
 }
 
 .menu>div{
@@ -84,7 +94,7 @@ nav a
 }
 
 .menu>div.active{
-    background-color: seagreen;
+    background-color: seagreen;    
 }
 
 nav > div:hover div.submenu{
