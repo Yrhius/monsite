@@ -11,6 +11,7 @@ body{
     line-height: 1.5;
     color:lightgrey
 }
+
 a:hover{
     color: #01D758;
 }
@@ -46,15 +47,11 @@ article {
     margin-right: auto;
     margin-left: auto;
     flex-direction: column;
-}
-
-.PESTEL
-{
-    
     background-color: black;
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
+    box-shadow: 2px 2px 8px #01D758;
 }
 
 @font-face{
@@ -81,8 +78,6 @@ p{
 /*fin main*/
 
 /* nav */
-
-
 
 .menu{
     background-color: black;
@@ -122,6 +117,10 @@ p{
 
 .submenu a:nth-child(even){
     color: white;
+}
+
+.submenu a:hover{
+    color: #01D758;
 }
 
 .menu>div.active{
@@ -230,6 +229,35 @@ footer {
 
 /* fin footer*/
 
+/* Formulaire*/
+
+form
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+fieldset
+{
+    border: #01D758 solid ;
+    margin: 2%;
+    line-height: 300%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+fieldset div
+{
+    line-height: normal;
+}
+
+form h2 {
+    color: #01D758;
+}
+
+/* Fin Formulaire */
+
 
 @media( max-width:767px){
     .menu{
@@ -262,6 +290,10 @@ footer {
 
     .menu2 a:nth-child(even){
         color: white;
+    }
+
+    .menu2 a:hover{
+        color: #01D758;
     }
 
 
@@ -304,33 +336,3 @@ footer {
     }    
 }
 
-/* Formulaire*/
-
-form
-{
-    display: flex;
-    flex-direction: column;
-
-}
-
-fieldset
-{
-    border: #01D758 solid ;
-    margin: 2%;
-    line-height: 300%;
-    background-color: black;
-}
-
-fieldset div
-{
-    line-height: normal;
-}
-
-form h2 {
-    color: #01D758;
-}
-
-
-
-
-/* Fin Formulaire */
