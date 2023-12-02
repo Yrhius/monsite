@@ -271,3 +271,33 @@ footer {
         width:100%
     }    
 }
+
+/* Formulaire*/
+
+form
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+fieldset
+{
+    border: #01D758 solid ;
+    margin: 2%;
+    line-height: 300%;
+    background-color: black;
+}
+
+fieldset div
+{
+    line-height: normal;
+}
+
+form h2 {
+    color: #01D758;
+}
+
+
+
+/* Fin Formulaire */
