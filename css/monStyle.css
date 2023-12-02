@@ -142,6 +142,12 @@ h4{
 .section img {
     height: 300px;
   }
+#graph{
+    max-width: 300px;
+}
+#plateau{
+    max-width: 500px;
+}
 
 .conteneur ul {
     list-style: none;
