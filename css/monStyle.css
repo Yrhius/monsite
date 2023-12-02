@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
+/*main*/
 body{
     /*background-color: #293133;*/
     background-color: #222222;
@@ -16,9 +17,15 @@ a:hover{
 
 a{
     color:lightgrey;
+    text-decoration: none;
 }
 
-/*main*/
+a:hover {
+    padding-left: 8px;
+}
+
+
+
 main{
     width:80%;
     padding:1em;
@@ -50,14 +57,32 @@ article {
     text-align: justify;
 }
 
+@font-face{
+    font-family: "SourceSansPro"; src: url(fontes/source-sans-pro.zip);
+    font-family: "ChunkFive" ; src: url(fontes/chunkfive.zip);
+    font-family: "openSans"; src: url(fontes/open-sans.zip);
+}
+
+h2, h3{
+    font-family: 'ChunkFive','Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+}
+h4{
+    font-family: 'openSans','sans-sherif','Arial';
+}
+.float
+{
+    float:left;
+}
+
+p{
+    font-family: 'SourceSansPro', 'Arial', 'Helvetica', sans-serif;
+}
+
 /*fin main*/
 
 /* nav */
 
-nav a 
-{
-    text-decoration: none;
-}
+
 
 .menu{
     background-color: black;
@@ -83,14 +108,20 @@ nav a
     border-right: 2px solid #01D758;
 }
 
-
 .submenu{
     position: absolute;
     top: 0;
     left: 0;
-    margin: 50px 0 0 0;
+    margin: 70px 0 0 0;
     background-color: seagreen;
     display: none;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.submenu a:nth-child(even){
+    color: white;
 }
 
 .menu>div.active{
@@ -98,34 +129,17 @@ nav a
 }
 
 nav > div:hover div.submenu{
-    display:block;
+    display:flex;
+    flex-direction: column;
 }
-
-/*fin nav*/
 
 nav div{
     width: 100px;
 }
-@font-face{
-    font-family: "SourceSansPro"; src: url(fontes/source-sans-pro.zip);
-    font-family: "ChunkFive" ; src: url(fontes/chunkfive.zip);
-    font-family: "openSans"; src: url(fontes/open-sans.zip);
-}
 
-h2, h3{
-    font-family: 'ChunkFive','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h4{
-    font-family: 'openSans','sans-sherif','Arial';
-}
-.float
-{
-    float:left; 
-}
+/*fin nav*/
 
-p{
-    font-family: 'SourceSansPro', Arial, Helvetica, sans-serif;
-}
+
 /*footer*/
 
 
@@ -141,6 +155,12 @@ h4{
 .section img {
     height: 300px;
   }
+#graph{
+    max-width: 300px;
+}
+#plateau{
+    max-width: 500px;
+}
 
 .conteneur ul {
     list-style: none;
@@ -197,10 +217,7 @@ footer {
     transition: all 0.3s ease;
 }
 
-.colonne ul li a:hover {
-    color:#01D758;
-    padding-left: 8px;
-}
+
 
 .colonne .images {
     display: inline-block;
@@ -225,6 +242,10 @@ footer {
         left: 0;
         z-index: 1;
     }
+    .burger>div{
+        width: 50px;
+        height: 50px;
+    }
 
     .burger img{
         width: 50px;
@@ -235,6 +256,12 @@ footer {
         position: absolute;
         top: 40px;
         left: 0;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .menu2 a:nth-child(even){
+        color: white;
     }
 
 
