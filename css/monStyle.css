@@ -281,6 +281,11 @@ footer {
         width:50%;
         margin-bottom:30px;
     }
+
+    .tropgrand
+    {
+        width: 70%;
+    }
 }
 
 @media(min-width:768px){
@@ -324,6 +329,7 @@ fieldset div
 form h2 {
     color: #01D758;
 }
+
 
 
 
